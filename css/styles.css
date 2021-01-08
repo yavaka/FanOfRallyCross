@@ -1,3 +1,16 @@
+.navbar {
+    color: #242424;
+    background-color: #242424;
+}
+
+#logo {
+    height: 50px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../images/hamburger-icon.png");
+}
+
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -6,14 +19,14 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
-
-#about {
-    background-color: black;
-    color: azure;
 }
 
-footer{
-    background-color: black;
-    color: azure;
+#about {
+    background-color: #242424;
+    color: #d6d429;
+}
+
+footer {
+    background-color: #242424;
+    color: #d6d429;
 }
