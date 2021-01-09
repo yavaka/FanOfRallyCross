@@ -26,7 +26,6 @@
     background-color: #d6d429;
 }
 
-/*-------------------------------------------------------------------------*/
 .overlay {
     height: 0%;
     width: 100%;
@@ -88,8 +87,6 @@
     }
 }
 
-/*-------------------------------------------------------------------------*/
-
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -143,6 +140,12 @@ footer a {
 
 footer span {
     padding: 12px;
+    color: #708f2b;
+}
+
+footer i{
+    color: #d6d429;
+    size: 10px;
 }
 
 .btn {
