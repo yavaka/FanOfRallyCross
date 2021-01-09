@@ -11,6 +11,85 @@
     background-image: url("../images/hamburger-icon.png");
 }
 
+.navbar a {
+    font-size: 20px;
+    color: #708f2b;
+    text-align: center;
+    text-decoration: none;
+}
+
+.active a {
+    background-color: #d6d429;
+}
+
+.nav-item a:hover {
+    background-color: #d6d429;
+}
+
+/*-------------------------------------------------------------------------*/
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    background-color: rgba(24, 24, 24, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.drivers-card {
+    padding: 8px;
+    text-decoration: none;
+    color: #708f2b;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    background-color: #d6d429;
+    margin: 5%;
+}
+
+.overlay .drivers-card:hover, .overlay .drivers-card:focus {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #708f2b;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .close-btn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+
 .carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -21,12 +100,69 @@
     background-size: cover;
 }
 
+.carousel-container {
+    background-color: #242424;
+}
+
+.carousel-item:hover {
+    opacity: 0.5;
+}
+
+.carousel-indicators li {
+    background-color: #708f2b;
+}
+
+.carousel-indicators .active {
+    background-color: #d6d429;
+}
+
 #about {
     background-color: #242424;
     color: #d6d429;
 }
 
+#about p {
+    color: #708f2b;
+}
+
+#top-drivers {
+    background-color: #d6d429;
+    color: #242424;
+}
+
 footer {
     background-color: #242424;
     color: #d6d429;
+}
+
+footer a {
+    color: #708f2b;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer span {
+    padding: 12px;
+}
+
+.btn {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn:hover{
+    color: #d6d429;
+}
+
+.btn-primary {
+    background-color: #d6d429;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #708f2b;
+}
+
+.card {
+    border: none;
 }

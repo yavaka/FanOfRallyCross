@@ -27,7 +27,7 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="drivers.html">Drivers</a>
+                        <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tracks.html">Tracks</a>
@@ -43,6 +43,87 @@
         </div>
     </nav>
 
+    <!-- Drivers overlay -->
+    <div id="drivers" class="overlay">
+        <button onclick="closeDriversOverlay()" type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="overlay-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="drivers/johan.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/johan_top_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">JOHAN KRISTOFFERSSON</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="drivers/robin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/robin_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">ROBIN LARSSON</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="drivers/mattias.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/mattias_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">MATTIAS EKSTRÖM</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="drivers/kevin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/kevin_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">KEVIN HANSEN</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="drivers/timmy.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/timmy_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">TIMMY HANSEN</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="drivers/niclas.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/niclas_drivers_2.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">NICLAS GRÖNHOLM</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<br><br><br><br>
+    <section>
+        <div class="container">
+            <h1>Tracks</h1>
+        </div>
+    </section>
+    
+    <!-- Footer -->
     <footer class="py-5">
         <div class="container">
             <div class="row justify-content-around">
@@ -55,9 +136,9 @@
                 </div>
                 <div class="col-4">
                     <h4>Quick Links</h4>
-                    <a href="drivers.html">Drivers</a><br>
-                    <a href="leaderboard.html">Leaderboard</a><br>
-                    <a href="contact.html">Contact</a><br>
+                    <a class="btn" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a><br>
+                    <a class="btn" href="leaderboard.html">Leaderboard</a><br>
+                    <a class="btn" href="contact.html">Contact</a><br>
                 </div>
             </div>
         </div>
@@ -73,7 +154,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="../js/scripts.js"></script>
 </body>
 
 </html>

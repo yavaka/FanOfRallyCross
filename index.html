@@ -27,7 +27,7 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="html/drivers.html">Drivers</a>
+                        <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="html/tracks.html">Tracks</a>
@@ -43,79 +43,148 @@
         </div>
     </nav>
 
-    <!--Slider-->
-    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide -->
-            <div class="carousel-item active" style="background-image: url('images/home_page_1.jpg')">
-
-            </div>
-            <!-- Slide Two - Set the background image for this slide -->
-            <div class="carousel-item" style="background-image: url('images/home_page_2.jpg')">
-
-            </div>
-            <!-- Slide Three - Set the background image for this slide -->
-            <div class="carousel-item" style="background-image: url('images/home_page_3.jpg')">
-
+    <!-- Drivers overlay -->
+    <div id="drivers" class="overlay">
+        <button onclick="closeDriversOverlay()" type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="overlay-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="html/drivers/johan.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/johan_top_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">JOHAN KRISTOFFERSSON</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="html/drivers/robin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/robin_drivers.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">ROBIN LARSSON</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="html/drivers/mattias.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/mattias_drivers.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">MATTIAS EKSTRÖM</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="html/drivers/kevin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/kevin_drivers.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">KEVIN HANSEN</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="html/drivers/timmy.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/timmy_drivers.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">TIMMY HANSEN</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="html/drivers/niclas.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="images/drivers/niclas_drivers_2.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">NICLAS GRÖNHOLM</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+    </div>
+
+    <!--Slider-->
+    <div class="carousel-container">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide -->
+                <div class="carousel-item active" style="background-image: url('images/home_page_1.jpg')"></div>
+                <!-- Slide Two - Set the background image for this slide -->
+                <div class="carousel-item" style="background-image: url('images/home_page_2.jpg')"></div>
+                <!-- Slide Three - Set the background image for this slide -->
+                <div class="carousel-item" style="background-image: url('images/home_page_3.jpg')"></div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <h1 class="display-4">About</h1>
-            <p class="lead">Rally Cross Fan is a place for rally cross enthusiasts. Here you will find all information about season 2020, drivers, race tracks and leaderbord.</p>
+            <p class="lead">Rally Cross Fan is a place for rally cross enthusiasts. Here you will find all information
+                about season 2020, drivers, race tracks and leaderbord.</p>
         </div>
     </section>
 
     <!-- Top 3 Drivers Section-->
-    <section class="py-5">
+    <section id="top-drivers" class="py-5">
         <div class="container">
             <h1 class="display-4">Top Drivers</h1>
             <div class="row">
                 <div class="col-4">
-                    <div class="card lead" style="width: 18rem;">
-                        <img class="card-img-top" src="images/home_page_1.jpg" alt="Card image cap">
+                    <div class="card lead">
+                        <img class="card-img-top" src="images/drivers/johan_top_drivers.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">JOHAN KRISTOFFERSSON</h5>
+                            <p class="card-text">A news headline of the 2019-2020 off-season, was double FIA World
+                                Rallycross Champion Johan Kristoffersson returning to...</p>
+                            <a href="html/drivers/johan.html" class="btn btn-primary">Learn more</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <div class="card lead" style="width: 18rem;">
-                        <img class="card-img-top" src="images/home_page_1.jpg" alt="Card image cap">
+                    <div class="card lead">
+                        <img class="card-img-top" src="images/drivers/mattias_top_drivers.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">MATTIAS EKSTRÖM</h5>
+                            <p class="card-text">2016 World RX Champion and two-time DTM title winner Mattias Ekstrom
+                                grew up with rallycross and spent a large part...</p>
+                            <a href="html/drivers/mattias.html" class="btn btn-primary">Learn more</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <div class="card lead" style="width: 18rem;">
-                        <img class="card-img-top" src="images/home_page_1.jpg" alt="Card image cap">
+                    <div class="card lead">
+                        <img class="card-img-top" src="images/drivers/timmy_top_drivers.jpg" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">TIMMY HANSEN</h5>
+                            <p class="card-text">Oldest son of Kenneth Hansen, the most successful rallycross driver to
+                                date with 14 FIA European Rallycross titles...</p>
+                            <a href="html/drivers/timmy.html" class="btn btn-primary">Learn more</a>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,17 +195,17 @@
             <div class="row justify-content-around">
                 <div class="col-4">
                     <h4>Rally Cross Fan</h4>
-                    Student Name with icon <br>
-                    Student Id with icon <br>
-                    Course title with icon <br>
-                    Email with icon <br>
+                    <span>Student Name with icon</span><br>
+                    <span>Student Id with icon</span><br>
+                    <span>Course title with icon</span><br>
+                    <span>Email with icon</span><br>
                 </div>
                 <div class="col-4">
                     <h4>Quick Links</h4>
-                    <a href="html/drivers.html">Drivers</a><br>
-                    <a href="html/tracks.html">Tracks</a><br>
-                    <a href="html/leaderboard.html">Leaderboard</a><br>
-                    <a href="html/contact.html">Contact</a><br>
+                    <a class="btn" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a><br>
+                    <a class="btn" href="html/tracks.html">Tracks</a><br>
+                    <a class="btn" href="html/leaderboard.html">Leaderboard</a><br>
+                    <a class="btn" href="html/contact.html">Contact</a><br>
                 </div>
             </div>
         </div>
