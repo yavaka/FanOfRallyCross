@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body>
+<body class="driver-body">
     <!-- Navigation-bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../../index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
@@ -116,8 +116,100 @@
         </div>
     </div>
 
-    <br><br><br> delete after finish
-    <footer class="py-5">
+    <div class="container nav-driver">
+        <div class="row " style="padding-top: 2%; background-color: #242424;">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()" style="color: #242424;">Details</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()" style="color: #242424;">Gallery</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()" style="color: #242424;">Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../images/drivers/kevin_drivers.jpg" alt="kevin">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="driver-title">KEVIN HANSEN</h3>
+                    <img class="driver-car" src="../../images/drivers/kevin_car.png" alt="kevin car">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-6">
+                    <div class="driver-info  align-items-center">
+                        <p>Kevin Hansen, younger brother of World RX driver Timmy Hansen and son of rallycross legend Kenneth Hansen, started his career in karting in 2005 before becoming World Champion in ROK Junior in 2010. </p>    
+                        <p>In 2012, Hansen won the JRX Series as well as Junior Championships in Britain and Sweden before stepping up to RX2  in 2014 where he finished runner-up.  In 2015, he went one better and won the RX2 series before reaching the final at the season-closing World RX of Argentina on his Supercar debut. </p>
+                        <p>In 2016, Hansen moved up to Supercar full-time to contest the FIA European Rallycross Championship where he dominated by winning four out of the five events and becoming Euro RX Champion.</p>
+                        <p>For 2017, Hansen made the next step by moving up to World RX to compete in all 12 rounds of the World Championship as the third entry for Team Peugeot-Hansen. He reached the final in Germany and secured eighth place in the overall standings. Hansen continued to drive a Peugeot 208 in 2018 as an individual entry under the Team Peugeot Total banner, putting in some impressive performances on his way to eighth in the championship. Kevin recorded his maiden WorldRX win at the 2019 Season opener in Abu Dhabi, and went on to finish an impressive third in the drivers’ title, behind his brother and main title rival Andreas Bakkerud.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>BORN</h5>
+                        <h5>28 May 1998</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>NATIONALITY</h5>
+                        <h5>Sweden</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>HOME TOWN</h5>
+                        <h5>Gotene</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TEAM</h5>
+                        <h5>TEAM HANSEN</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>RACES</h5>
+                        <h5>250</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>EVENT WINS</h5>
+                        <h5>1</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>PODIUMS</h5>
+                        <h5>6</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>FINALS</h5>
+                        <h5>22</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TOTAL PTS</h5>
+                        <h5>646</h5>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-gallery">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-video">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">VIDEO</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 driver-footer">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4">

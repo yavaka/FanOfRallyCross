@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body>
-    <!------- Navigation bar ---------------------------------------------->
+<body class="driver-body">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="../../index.html">
@@ -24,10 +23,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../../index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
@@ -44,7 +43,6 @@
         </div>
     </nav>
 
-    <!-- Dirvers overlay -------------------------------------------------->
     <div id="drivers" class="overlay">
         <button onclick="closeDriversOverlay()" type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -117,10 +115,101 @@
         </div>
     </div>
 
-    <br><br><br> delete after finish
+    <div class="container nav-driver">
+        <div class="row " style="padding-top: 2%; background-color: #242424;">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()" style="color: #242424;">Details</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()" style="color: #242424;">Gallery</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()" style="color: #242424;">Video</button>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer ----------------------------------------------------------->
-    <footer class="py-5">
+    <div id="driver-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../images/drivers/niclas_drivers.jpg" alt="niclas">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="driver-title">NICLAS GRÖNHOLM</h3>
+                    <img class="driver-car" src="../../images/drivers/niclas_car.png" alt="niclas car">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-6">
+                    <div class="driver-info  align-items-center">
+                        <p>Niclas Gronholm, son of two-time World Rally Champion Marcus, is a former Finnish Rallycross Champion entering his fourth season of FIA World Rallycross Championship competition.</p>
+
+                        <p>In 2014, Gronholm finished third in the autocross class of the Finnish Championship and in 2015 he drove an Olsbergs MSE run Ford Fiesta Supercar with which he won the Finnish Championship. In 2016, he contested a full World RX campaign with Olsbergs MSE – picking up a best finish of 11th in Sweden – as well as all rounds of RallyX on Ice in Sweden and the 2016 Finnish Rallycross Championship.</p>
+
+                        <p>In 2017, Gronholm competed as an independent as part of the GRX (Gronholm RallyX) team managed by his father, securing his first final appearance and a career best result of fifth place in Germany. In 2018, Gronholm remained with GRX and had an incredibly successful year, finishing seventh overall – the most successful of any privateer driver/team. Niclas’s 2019 campaign was his most impressive, recording two wins, scoring the most points per event tally, and finished an impressive fourth despite missing two events due to appendicitis. The Finn will be one of the title favourites, having developed the already impressive Hyundai over the winter, and switching to BOS Suspensions, damper supplier of the current World Rally Championship Toyota team.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>BORN</h5>
+                        <h5>29 May 1996</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>NATIONALITY</h5>
+                        <h5>Finland</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>HOME TOWN</h5>
+                        <h5>Kauniainen</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TEAM</h5>
+                        <h5>GRX TANECO</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>RACES</h5>
+                        <h5>249</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>EVENT WINS</h5>
+                        <h5>3</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>PODIUMS</h5>
+                        <h5>5</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>FINALS</h5>
+                        <h5>17</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TOTAL PTS</h5>
+                        <h5>511</h5>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-gallery">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-video">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">VIDEO</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 driver-footer">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4">

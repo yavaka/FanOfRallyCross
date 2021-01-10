@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body>
+<body class="driver-body">
     <!-- Navigation-bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../../index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
@@ -116,8 +116,108 @@
         </div>
     </div>
 
-    <br><br><br> delete after finish
-    <footer class="py-5">
+    <div class="container nav-driver">
+        <div class="row " style="padding-top: 2%; background-color: #242424;">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()"
+                    style="color: #242424;">Details</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()"
+                    style="color: #242424;">Gallery</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()"
+                    style="color: #242424;">Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../images/drivers/robin_drivers.jpg" alt="robin">
+                </div>
+                <div class="col-md-6" style="margin-top: 5%;"> 
+                    <h3 class="driver-title">ROBIN LARSSON</h3>
+                    <img class="driver-car" src="../../images/drivers/robin_car.png" alt="robin car">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-6">
+                    <div class="driver-info  align-items-center">
+                        <p>Double FIA European Rallycross Champion for Supercars and WorldRX event winner in Argentina
+                            2015, Robin Larsson will bring his flamboyant driving style back to the World Championship
+                            after dominating the European scene in 2019. In his first year at the wheel of the EKS-built
+                            Audi S1, Larsson won the first four events of the five-round European Championship to secure
+                            the title with the JC Raceteknik team. This year will see Robin run the latest version of
+                            the car, which narrowly lost out to Timmy Hansen in the hands of Andreas Bakkerud. Robin
+                            will strengthen the Swedish contingent of the FIA World Rallycross Championship, with five
+                            drivers taking part in the full campaign.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>BORN</h5>
+                        <h5>08 July 1992</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>NATIONALITY</h5>
+                        <h5>Sweden</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>HOME TOWN</h5>
+                        <h5>Svenljunga</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TEAM</h5>
+                        <h5>KYB TEAM JC</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>RACES</h5>
+                        <h5>243</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>EVENT WINS</h5>
+                        <h5>1</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>PODIUMS</h5>
+                        <h5>6</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>FINALS</h5>
+                        <h5>14</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TOTAL PTS</h5>
+                        <h5>488</h5>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-gallery">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-video">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">VIDEO</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 driver-footer">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4">

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body>
+<body class="driver-body">
     <!-- Navigation-bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../../index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
@@ -116,8 +116,125 @@
         </div>
     </div>
 
-    <br><br><br> delete after finish
-    <footer class="py-5">
+    <div class="container nav-driver">
+        <div class="row">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()" style="color: #242424;">Details</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()" style="color: #242424;">Gallery</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()" style="color: #242424;">Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../images/drivers/johan_drivers.jpg" alt="johan">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="driver-title">JOHAN KRISTOFFERSSON</h3>
+                    <img class="driver-car" src="../../images/drivers/johan_car.png" alt="johan car">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-6">
+                    <div class="driver-info  align-items-center">
+                        <p>A news headline of the 2019-2020 off-season, was double FIA World Rallycross Champion Johan
+                            Kristoffersson returning to the series after a gap-year driving a Volkswagen Golf in the
+                            WTCR for
+                            Sebastien Loeb Racing. The most successful driver of the Championship will return as a
+                            single car
+                            entry in a family run team, but at the wheel of the Volkswagen Polo used in his dominating
+                            2017 and
+                            2018 campaigns.</p>
+
+                        <p>Following a handful of European RX and World RX outings in 2013 and 2014, Kristoffersson made
+                            the
+                            full-time switch to the FIA World Rallycross Championship in 2015 with Volkswagen Team
+                            Sweden,
+                            winning the curtain raising World RX of Portugal event and finishing on the podium a further
+                            four
+                            times, going on to claim third in the overall standings.</p>
+
+                        <p>A second career success followed at World RX of France in 2016 en route to clinching the
+                            runner-up
+                            spot behind countryman Mattias Ekstrom, a breakthrough season that would ultimately set him
+                            up for
+                            his dominant title-winning World RX campaign in 2017.</p>
+
+                        <p>Paired with Petter Solberg in the rebranded PSRX Volkswagen Sweden team and driving a
+                            factory-developed Volkswagen Polo Supercar, Kristoffersson swept to seven victories –
+                            including
+                            five-in-a-row – to win the 2017 drivers’ title by a sizeable margin. Johan proved
+                            all-conquering in
+                            2018 with 11 wins out of 12 on his way to his second World Championship crown.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>BORN</h5>
+                        <h5>06 December 1988</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>NATIONALITY</h5>
+                        <h5>Sweden</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>HOME TOWN</h5>
+                        <h5>Arvika</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TEAM</h5>
+                        <h5>PSRX Volkswagen Sweden</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>RACES</h5>
+                        <h5>340</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>EVENT WINS</h5>
+                        <h5>23</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>PODIUMS</h5>
+                        <h5>35</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>FINALS</h5>
+                        <h5>47</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TOTAL PTS</h5>
+                        <h5>1383</h5>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-gallery">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-video">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">VIDEO</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 driver-footer">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4">
@@ -142,10 +259,10 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

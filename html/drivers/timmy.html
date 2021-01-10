@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body>
+<body class="driver-body">
     <!-- Navigation-bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="../../index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="javascript:void(0)" onclick="openDriversOverlay()">Drivers</a>
                     </li>
                     <li class="nav-item">
@@ -116,8 +116,107 @@
         </div>
     </div>
 
-    <br><br><br> delete after finish
-    <footer class="py-5">
+    <div class="container nav-driver">
+        <div class="row " style="padding-top: 2%; background-color: #242424;">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()"
+                    style="color: #242424;">Details</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()"
+                    style="color: #242424;">Gallery</button>
+            </div>
+            <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()"
+                    style="color: #242424;">Video</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../../images/drivers/timmy_drivers.jpg" alt="timmy">
+                </div>
+                <div class="col-md-6" style="margin-top: 5%;">
+                    <h3 class="driver-title">TIMMY HANSEN</h3>
+                    <img class="driver-car" src="../../images/drivers/timmy_car.png" alt="timmy car">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-md-6">
+                    <div class="driver-info  align-items-center">
+                        <p>Oldest son of Kenneth Hansen, the most successful rallycross driver to date with 14 FIA
+                            European Rallycross titles to his name, Timmy Hansen has gone on to establish himself as a
+                            master of the discipline in his own right, with the pinnacle his Drivers’ and Teams’ Title
+                            crown in dramatic fashion at the 2019 Season finale.</p>
+
+                        <p>Despite his roots, Hansen began his motor sport career in karting and circuit racing before focusing on rallycross in 2012. After finishing third overall in the 2013 FIA European Rallycross Championship, Hansen progressed to the FIA World Rallycross Championship at the wheel of a Peugeot 208 WRX and scored his and the car’s maiden success in the World RX of Italy on his way to fourth in the championship.  A successful 2015 World RX season yielded three more wins (Norway, France, Turkey) and the runner-up spot in the series behind Petter Solberg. </p>
+
+                        <p>In 2016, Hansen was joined at Team Peugeot-Hansen by nine-time WRC Champion Sebastien Loeb. Hansen won at World RX of Canada and achieved four more podiums in 2017. Hansen entered into a fifth consecutive season with the French manufacturer in 2018, but the first since Peugeot’s decision to take its World RX effort in-house. Utilising resources from the firm’s winning Dakar Rally programme, Hansen competed alongside Loeb under the Team Peugeot Total banner picking up two podiums and finishing sixth in the championship. His 2019 campaign was his most established, recording four wins to clinch the Drivers and Teams Title, together with his brother/teammate.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>BORN</h5>
+                        <h5>21 May 1992</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>NATIONALITY</h5>
+                        <h5>Sweden</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>HOME TOWN</h5>
+                        <h5>Gotene</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TEAM</h5>
+                        <h5>TEAM HANSEN</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>RACES</h5>
+                        <h5>435</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>EVENT WINS</h5>
+                        <h5>10</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>PODIUMS</h5>
+                        <h5>32</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>FINALS</h5>
+                        <h5>55</h5>
+                    </div>
+                    <div class="driver-info d-flex justify-content-between align-items-center">
+                        <h5>TOTAL PTS</h5>
+                        <h5>1419</h5>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-gallery">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="driver-video">
+        <div class="container">
+            <div class="row">
+                <h1 style="color: aqua;">VIDEO</h1>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 driver-footer">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-4">
