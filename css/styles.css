@@ -188,6 +188,10 @@ footer i {
     background-color: #708f2b;
 }
 
+.btn-primary:disabled{
+    background-color: #708f2b;
+}
+
 .driver-body {
     background-color: #242424;
 }

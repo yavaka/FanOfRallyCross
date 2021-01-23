@@ -44,72 +44,81 @@
         </div>
     </nav>
 
+    <!-- Drivers overlay -->
     <div id="drivers" class="overlay">
         <button onclick="closeDriversOverlay()" type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-        <div class="overlay-content">
+        <div class="overlay-content" style="padding-bottom: 8%;">
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
-                        <a href="johan.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/johan_top_drivers.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">JOHAN KRISTOFFERSSON</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <a href="kevin.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/kevin_drivers.jpg"
+                                        alt="Card image cap" id="kevin-img-drivers">
+                                    <div class="card-body">
+                                        <h5 class="card-title">KEVIN HANSEN</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="robin.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/robin_drivers.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">ROBIN LARSSON</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="robin.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/robin_drivers_2.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ROBIN LARSSON</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="mattias.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/mattias_drivers.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">MATTIAS EKSTRÖM</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="mattias.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/mattias_drivers.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">MATTIAS EKSTRÖM</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="kevin.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/kevin_drivers.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">KEVIN HANSEN</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="johan.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/johan_top_drivers.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">JOHAN <br> KRISTOFFERSSON</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="timmy.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/timmy_drivers.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">TIMMY HANSEN</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="timmy.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/timmy_drivers_2.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TIMMY HANSEN</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <a href="niclas.html" class="btn">
-                            <div class="drivers-card lead">
-                                <img class="card-img-top" src="../../images/drivers/niclas_drivers_2.jpg"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">NICLAS GRÖNHOLM</h5>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="niclas.html" class="btn">
+                                <div class="card mx-30">
+                                    <img class="card-img-top" src="../../images/drivers/niclas_drivers_2.jpg"
+                                        alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">NICLAS GRÖNHOLM</h5>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -119,13 +128,16 @@
     <div class="container nav-driver">
         <div class="row " style="padding-top: 2%; background-color: #242424;">
             <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
-                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()" style="color: #242424;">Details</button>
+                <button class="btn btn-primary btn-lg" id="details-btn" onclick="showDriverDetails()"
+                    style="color: #242424;">Details</button>
             </div>
             <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
-                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()" style="color: #242424;">Gallery</button>
+                <button class="btn btn-primary btn-lg" id="gallery-btn" onclick="showDriverGallery()"
+                    style="color: #242424;">Gallery</button>
             </div>
             <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-1" style="margin-left: 1%;">
-                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()" style="color: #242424;">Video</button>
+                <button href="" class="btn btn-primary btn-lg" id="video-btn" onclick="showDriverVideo()"
+                    style="color: #242424;">Video</button>
             </div>
         </div>
     </div>
@@ -144,10 +156,24 @@
             <div class="row" style="margin-top: 3%;">
                 <div class="col-md-6">
                     <div class="driver-info  align-items-center">
-                        <p>Kevin Hansen, younger brother of World RX driver Timmy Hansen and son of rallycross legend Kenneth Hansen, started his career in karting in 2005 before becoming World Champion in ROK Junior in 2010. </p>    
-                        <p>In 2012, Hansen won the JRX Series as well as Junior Championships in Britain and Sweden before stepping up to RX2  in 2014 where he finished runner-up.  In 2015, he went one better and won the RX2 series before reaching the final at the season-closing World RX of Argentina on his Supercar debut. </p>
-                        <p>In 2016, Hansen moved up to Supercar full-time to contest the FIA European Rallycross Championship where he dominated by winning four out of the five events and becoming Euro RX Champion.</p>
-                        <p>For 2017, Hansen made the next step by moving up to World RX to compete in all 12 rounds of the World Championship as the third entry for Team Peugeot-Hansen. He reached the final in Germany and secured eighth place in the overall standings. Hansen continued to drive a Peugeot 208 in 2018 as an individual entry under the Team Peugeot Total banner, putting in some impressive performances on his way to eighth in the championship. Kevin recorded his maiden WorldRX win at the 2019 Season opener in Abu Dhabi, and went on to finish an impressive third in the drivers’ title, behind his brother and main title rival Andreas Bakkerud.</p>
+                        <p>Kevin Hansen, younger brother of World RX driver Timmy Hansen and son of rallycross legend
+                            Kenneth Hansen, started his career in karting in 2005 before becoming World Champion in ROK
+                            Junior in 2010. </p>
+                        <p>In 2012, Hansen won the JRX Series as well as Junior Championships in Britain and Sweden
+                            before stepping up to RX2 in 2014 where he finished runner-up. In 2015, he went one better
+                            and won the RX2 series before reaching the final at the season-closing World RX of Argentina
+                            on his Supercar debut. </p>
+                        <p>In 2016, Hansen moved up to Supercar full-time to contest the FIA European Rallycross
+                            Championship where he dominated by winning four out of the five events and becoming Euro RX
+                            Champion.</p>
+                        <p>For 2017, Hansen made the next step by moving up to World RX to compete in all 12 rounds of
+                            the World Championship as the third entry for Team Peugeot-Hansen. He reached the final in
+                            Germany and secured eighth place in the overall standings. Hansen continued to drive a
+                            Peugeot 208 in 2018 as an individual entry under the Team Peugeot Total banner, putting in
+                            some impressive performances on his way to eighth in the championship. Kevin recorded his
+                            maiden WorldRX win at the 2019 Season opener in Abu Dhabi, and went on to finish an
+                            impressive third in the drivers’ title, behind his brother and main title rival Andreas
+                            Bakkerud.</p>
                     </div>
                 </div>
                 <div class="col-md-5">
