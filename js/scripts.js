@@ -9,10 +9,14 @@ $(document).ready(function() {
 
 function openDriversOverlay() {
     document.getElementById("drivers").style.height = "100%";
+    document.body.style.overflow = "hidden"; // ADD THIS LINE
+    document.body.style.height = "100%"; // ADD THIS LINE
 }
 
 function closeDriversOverlay() {
     document.getElementById("drivers").style.height = "0%";
+    document.body.style.overflow = "auto"; // ADD THIS LINE
+    document.body.style.height = "auto"; // ADD THIS LINE
 }
 
 function showDriverDetails() {
@@ -114,3 +118,8 @@ function hideVideo(){
         driverVideo.style.display = "none";
     }
 }
+
+//Hide hamburger menu on click of an nav-item
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

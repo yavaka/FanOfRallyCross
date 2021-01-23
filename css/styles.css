@@ -20,8 +20,27 @@
     }
 }
 
+/* Medium devices (tablets, 991px and less) */
+@media (max-width: 991px){
+    .close{
+        margin-top: 3%;
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px){
+    #kevin-img-drivers{
+        height: 222px;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #d6d429;
+}
 
 .navbar {
     color: #242424;
@@ -243,24 +262,12 @@ footer i {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: #d6d429;
-}
-
 .card{
     border: none;
+}
+
+.card:hover .card-title{
+    color: #d6d429;
 }
 
 .card-img-top {
