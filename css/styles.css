@@ -1,4 +1,40 @@
+@media (max-width: 575px) {
+    .overlay {
+        overflow-y: auto;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .close-btn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    #driver-nav {
+        margin-top: 80px;
+    }
+    .vertical-line {
+        display: none;
+    }
+    hr {
+        margin-top: 1%;
+        border: 1px solid #708f2b;
+        width: 300px;
+    }
+    .contact {
+        margin-top: 20%;
+    }
+    #contact-form {
+        padding-top: -3%;
+    }
+    #contact-details {
+        margin-left: auto;
+        margin-bottom: 4%;
+    }
+}
+
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
     .overlay {
         overflow-y: auto;
@@ -11,28 +47,62 @@
         top: 15px;
         right: 35px;
     }
-    #driver-nav{
+    #driver-nav {
         margin-top: 80px;
+    }
+    .vertical-line {
+        display: none;
+    }
+    hr {
+        margin-top: 1%;
+        border: 1px solid #708f2b;
+        width: 500px;
+    }
+    .contact {
+        margin-top: 20%;
+    }
+    #contact-form {
+        padding-top: -3%;
+    }
+    #contact-details {
+        margin-left: auto;
+        margin-bottom: 4%;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
     .card {
         margin-top: 5%;
     }
+    .vertical-line {
+        display: block;
+    }
+    hr {
+        display: none;
+    }
+    .contact {
+        margin-top: 15%;
+    }
 }
 
 /* Medium devices (tablets, 991px and less) */
+
 @media (max-width: 991px) {
     .close {
         margin-top: 3%;
     }
 }
+
 /* Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
- 
+    .contact {
+        margin-top: 10%;
+    }
 }
+
 
 body {
     font-family: 'Lato', sans-serif;
@@ -40,8 +110,9 @@ body {
 }
 
 /*--------------------------------------------------------------
-        Navbar                                             
+    Navbar                                             
 -------------------------------------------------------------- */
+
 .navbar {
     color: #242424;
     background-color: #242424;
@@ -71,8 +142,9 @@ body {
 }
 
 /*--------------------------------------------------------------
-      Drivers overlay                                              
+    Drivers overlay                                              
 -------------------------------------------------------------- */
+
 .overlay {
     height: 0%;
     width: 100%;
@@ -115,6 +187,7 @@ body {
 /*--------------------------------------------------------------
     Index page carousel                                              
 -------------------------------------------------------------- */
+
 #main-carousel-item {
     height: 100vh;
     min-height: 350px;
@@ -154,9 +227,11 @@ body {
     background-color: #d6d429;
     color: #242424;
 }
+
 /*--------------------------------------------------------------
-      Footer                                              
+    Footer                                              
 -------------------------------------------------------------- */
+
 footer {
     background-color: #242424;
     color: #d6d429;
@@ -181,6 +256,7 @@ footer i {
 /*--------------------------------------------------------------
     Override btn class                                              
 -------------------------------------------------------------- */
+
 .btn {
     padding-top: 0;
     padding-bottom: 0;
@@ -204,7 +280,7 @@ footer i {
 }
 
 /*--------------------------------------------------------------
-      Driver page                                              
+    Driver page                                              
 -------------------------------------------------------------- */
 
 .driver-body {
@@ -285,22 +361,22 @@ footer i {
     cursor: pointer;
 }
 
-.modal{
+.modal {
     width: 100%;
     height: 100%;
     background-color: #242424;
 }
 
-.modal-header{
+.modal-header {
     border: none;
 }
 
-.modal-content{
+.modal-content {
     border: none;
     background-color: transparent;
 }
 
-.close-btn-modal{
+.close-btn-modal {
     right: 0;
     font-size: 60px;
     color: #708f2b;
@@ -318,8 +394,9 @@ footer i {
 }
 
 /*--------------------------------------------------------------
-      Top drivers cards and drivers overlay cards                                            
+    Top drivers cards and drivers overlay cards                                            
 -------------------------------------------------------------- */
+
 .card {
     border: none;
 }
@@ -355,4 +432,57 @@ footer i {
     .mx-30 {
         margin-bottom: 30px;
     }
+}
+
+/*--------------------------------------------------------------
+    Contact form                                           
+-------------------------------------------------------------- */
+
+.contact {
+    background-color: #242424;
+    margin-bottom: 3%;
+}
+
+.contact h1 {
+    margin-top: 3%;
+    color: #d6d429;
+}
+
+#contact-form {
+    border-right: 1px #d6d429;
+}
+
+#contact-form {
+    padding: 5%;
+}
+
+#contact-details {
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+#contact-form, #contact-details {
+    color: #708f2b;
+}
+
+#contact-details h1, #contact-details i {
+    color: #d6d429;
+}
+
+#contact-details i {
+    font-size: 30px;
+}
+
+#contact-details label, #contact-form label {
+    font-size: 20px;
+}
+
+#contact-map {
+    margin-top: 2%;
+}
+
+.vertical-line {
+    margin-top: 1%;
+    border-left: 1px solid #708f2b;
+    height: 500px;
 }

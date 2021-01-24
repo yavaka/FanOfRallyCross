@@ -7,6 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2b4705a627.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -45,90 +46,124 @@
         </div>
     </nav>
 
-    <br><br><br><br>
-    <section>
-        <div class="container">
-            <h1>Contact</h1>
-        </div>
-    </section>
-
     <!-- Drivers overlay -->
     <div id="drivers" class="overlay">
         <button onclick="closeDriversOverlay()" type="button" class="close" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-        <div class="overlay-content" style="padding-bottom: 8%;">
+        <div class="overlay-content">
             <div class="container">
                 <div class="row">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/kevin.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/kevin_drivers.jpg"
-                                        alt="Card image cap" id="kevin-img-drivers">
-                                    <div class="card-body">
-                                        <h5 class="card-title">KEVIN HANSEN</h5>
-                                    </div>
+                    <div class="col-4">
+                        <a href="drivers/johan.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/johan_top_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">JOHAN KRISTOFFERSSON</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/robin.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/robin_drivers_2.jpg"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ROBIN LARSSON</h5>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="drivers/robin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/robin_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">ROBIN LARSSON</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/mattias.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/mattias_drivers.jpg"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">MATTIAS EKSTRÖM</h5>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="drivers/mattias.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/mattias_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">MATTIAS EKSTRÖM</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/johan.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/johan_top_drivers.jpg"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">JOHAN <br> KRISTOFFERSSON</h5>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="drivers/kevin.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/kevin_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">KEVIN HANSEN</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/timmy.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/timmy_drivers_2.jpg"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">TIMMY HANSEN</h5>
-                                    </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="drivers/timmy.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/timmy_drivers.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">TIMMY HANSEN</h5>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <a href="drivers/niclas.html" class="btn">
-                                <div class="card mx-30">
-                                    <img class="card-img-top" src="../images/drivers/niclas_drivers_2.jpg"
-                                        alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">NICLAS GRÖNHOLM</h5>
-                                    </div>
+                            </div>
+                        </a>
+                        <a href="drivers/niclas.html" class="btn">
+                            <div class="drivers-card lead">
+                                <img class="card-img-top" src="../images/drivers/niclas_drivers_2.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">NICLAS GRÖNHOLM</h5>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-color: #242424; margin-top: 10%;">
+        <div class="contact">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="d-flex justify-content-center">Contact Us</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" id="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="">Full name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Subject</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input id="contact-btn" class="btn btn-primary btn-lg" type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="vertical-line"></div>
+                <hr>
+                <div class="col-md-5" id="contact-details">
+                    <i class="fas fa-graduation-cap d-flex justify-content-center"></i><br>
+                    <span class="d-flex justify-content-center">Yavor Yankov - 21905889</span><br>
+                    <i class="fas fa-envelope d-flex justify-content-center"></i><br>
+                    <span class="d-flex justify-content-center">yavakasprojects@gmail.com</span><br>
+                    <i class="fas fa-laptop-code d-flex justify-content-center"></i><br>
+                    <span class="d-flex justify-content-center">Software Engineering</span><br>
+                    <i class="fas fa-university d-flex justify-content-center"></i><br>
+                    <span class="d-flex justify-content-center">Buckinghamshire New University</span>
+                </div>
+            </div>
+            <hr>
+            <div class="row" id="contact-map">
+                <iframe width="100%" height="550px" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Buckinghamshire%20New%20University+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
         </div>
     </div>
