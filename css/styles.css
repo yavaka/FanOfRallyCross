@@ -1,40 +1,54 @@
+/* Small devices (portrait phones, up to 576px) */
+
 @media (max-width: 575px) {
-    .overlay {
-        overflow-y: auto;
-    }
+    /* Set the font size of 'a' tag in the overlay class */
     .overlay a {
         font-size: 20px
     }
-    #drivers{
+    /* Set 10% margin top to elements with id drivers  */
+    #drivers {
         margin-top: 10%;
     }
+    /*  Change the font size, how far from the top and 
+        right to be the absolute position of the close
+        button of the overlay */
     .close-btn {
         font-size: 20px;
         top: 15px;
         right: 35px;
     }
+    /* Set 80px margin top of the 3 buttons in the drivers pages */
     #driver-nav {
         margin-top: 80px;
     }
+    /* Hide the vertical line in the contact page */
     .vertical-line {
         display: none;
     }
+    /*  Set margin top, height, style, color and 
+        width of a horizontal line */
     hr {
         margin-top: 1%;
         border: 1px solid #708f2b;
         width: 300px;
     }
+    /* Set margin top of the whole contact page */
     .contact {
         margin-top: 20%;
     }
+    /* Decrease the padding top of the contact form */
     #contact-form {
         padding-top: -3%;
     }
+    /*  Set margin left and bottom of the contact 
+        details in contact page */
     #contact-details {
         margin-left: auto;
         margin-bottom: 4%;
     }
-    .tracks #first-track{
+    /*  Set 20% margin top of elements with 
+        id first-track inside track class */
+    .tracks #first-track {
         margin-top: 20%;
     }
 }
@@ -42,38 +56,54 @@
 /* Small devices (landscape phones, 576px and up) */
 
 @media (min-width: 576px) {
+    /*  Specifies the handling of overflow in the 
+        vertical direction of drivers overlay */
     .overlay {
         overflow-y: auto;
     }
+    /* Set the font size of 'a' tag in the overlay class */
     .overlay a {
         font-size: 20px
     }
+    /*  Change the font size, how far from the top and 
+        right to be the absolute position of the close
+        button of the overlay */
     .overlay .close-btn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
+    /* Set 80px margin top of the 3 buttons in the drivers pages */
     #driver-nav {
         margin-top: 80px;
     }
+    /* Hide the vertical line in the contact page */
     .vertical-line {
         display: none;
     }
+    /*  Set margin top, height, style, color and 
+        width of a horizontal line */
     hr {
         margin-top: 1%;
         border: 1px solid #708f2b;
         width: 500px;
     }
-    .contact, .tracks{
+    /* Set 20% margin top to elements with clsses contact and tracks  */
+    .contact, .tracks {
         margin-top: 20%;
     }
+    /* Decrease the padding top of the contact form */
     #contact-form {
         padding-top: -3%;
     }
+    /*  Set margin left and bottom of the contact 
+        details in contact page */
     #contact-details {
         margin-left: auto;
         margin-bottom: 4%;
     }
+    /*  Set 10% margin top of elements with 
+        id first-track inside track class */
     .tracks #first-track {
         margin-top: 10%;
     }
@@ -82,16 +112,20 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+    /* Set 5% margin top of the card class */
     .card {
         margin-top: 5%;
     }
+    /* Display vertical line */
     .vertical-line {
         display: block;
     }
+    /* Hide horizontal line */
     hr {
         display: none;
     }
-    .contact,.tracks {
+    /* Set 15% margin top to elements with clsses contact and tracks  */
+    .contact, .tracks {
         margin-top: 15%;
     }
 }
@@ -99,6 +133,7 @@
 /* Medium devices (tablets, 991px and less) */
 
 @media (max-width: 991px) {
+    /* Set 3% margin top of close class */
     .close {
         margin-top: 3%;
     }
@@ -107,10 +142,13 @@
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+    /* Set 10% margin top to elements with clsses contact and tracks  */
     .contact, .tracks {
         margin-top: 10%;
     }
 }
+
+/* Specifies a font family name and change background colour of the body class */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -121,18 +159,27 @@ body {
     Navbar                                             
 -------------------------------------------------------------- */
 
+/* Change the text and background colour of the navbar class  */
+
 .navbar {
     color: #242424;
     background-color: #242424;
 }
 
+/* Set logo height */
+
 #logo {
     height: 50px;
 }
 
+/* Path of the hamburger icon */
+
 .navbar-toggler-icon {
     background-image: url("../images/hamburger-icon.png");
 }
+
+/*  Change the font size, text colour, position and remove any decorations
+    of the navbar nav items */
 
 .navbar a {
     font-size: 20px;
@@ -141,9 +188,13 @@ body {
     text-decoration: none;
 }
 
+/* Set background colour of a nav item*/
+
 .active a {
     background-color: #d6d429;
 }
+
+/* Hover effect change the background colour of the nav item */
 
 .nav-item a:hover {
     background-color: #d6d429;
@@ -152,6 +203,8 @@ body {
 /*--------------------------------------------------------------
     Drivers overlay                                              
 -------------------------------------------------------------- */
+
+/* override the bootstrap 4 class overlay */
 
 .overlay {
     height: 0%;
@@ -167,6 +220,7 @@ body {
     margin-top: 5%;
 }
 
+/* override the bootstrap 4 class overlay-content */
 .overlay-content {
     position: relative;
     top: 10%;
@@ -175,11 +229,9 @@ body {
     margin-top: 30px;
 }
 
-.overlay .drivers-card:hover, .overlay .drivers-card:focus {
-    color: #f1f1f1;
-    cursor: pointer;
-}
-
+/*  Change the font size, how far from the top and 
+    right to be the absolute position and the text 
+    colour of the close button in the overlay */
 .overlay .close {
     position: absolute;
     top: 20px;
@@ -188,6 +240,7 @@ body {
     color: #708f2b;
 }
 
+/* Allow scrolling when the overlay is open/active */
 .overlay {
     overflow-y: scroll;
 }
@@ -206,31 +259,38 @@ body {
     background-size: cover;
 }
 
+/* change the background-color of the carousel */
 .carousel-container {
     background-color: #242424;
 }
 
+/* Hover effect set 0.5 opacity of the carousel items */
 #main-carousel-item:hover {
     opacity: 0.5;
 }
 
+/* change the background color of the carousel indicators*/
 .carousel-indicators li {
     background-color: #708f2b;
 }
 
+/* change the background color of the active carousel indicator*/
 .carousel-indicators .active {
     background-color: #d6d429;
 }
 
+/* change the background and text color of the about section*/
 #about {
     background-color: #242424;
     color: #d6d429;
 }
 
+/* Change text color of the p tags in the about section */
 #about p {
     color: #708f2b;
 }
 
+/* change the background and text color of the top drivers section*/
 #top-drivers {
     background-color: #d6d429;
     color: #242424;
@@ -240,22 +300,26 @@ body {
     Footer                                              
 -------------------------------------------------------------- */
 
+/* change the background and text color of the footer*/
 footer {
     background-color: #242424;
     color: #d6d429;
 }
 
+/* change the color, position and remove any decorations of 'a' tags in the footer*/
 footer a {
     color: #708f2b;
     text-align: center;
     text-decoration: none;
 }
 
+/* Set 12px padding and change the color of the span tag in the footer */
 footer span {
     padding: 12px;
     color: #708f2b;
 }
 
+/* Change the colour and size of the icons */
 footer i {
     color: #d6d429;
     size: 10px;
@@ -465,19 +529,19 @@ footer i {
     Tracks
 -------------------------------------------------------------- */
 
-.tracks h3{
+.tracks h3 {
     color: #242424;
 }
 
-.tracks #next-track{
+.tracks #next-track {
     margin-top: 5%;
 }
 
-.tracks img{
+.tracks img {
     width: 100%;
 }
 
-.tracks-hr{
+.tracks-hr {
     display: block;
     border: 1px solid #242424;
     width: 100%;
@@ -536,12 +600,12 @@ footer i {
     height: 500px;
 }
 
-.alert-warning{
+.alert-warning {
     background-color: #d6d429;
     color: #242424;
     border: none;
 }
 
-#contact-alert{
+#contact-alert {
     display: none;
 }
