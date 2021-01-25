@@ -530,3 +530,13 @@ footer i {
     border-left: 1px solid #708f2b;
     height: 500px;
 }
+
+.alert-warning{
+    background-color: #d6d429;
+    color: #242424;
+    border: none;
+}
+
+#contact-alert{
+    display: none;
+}
