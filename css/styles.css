@@ -58,7 +58,7 @@
         border: 1px solid #708f2b;
         width: 500px;
     }
-    .contact {
+    .contact, .tracks{
         margin-top: 20%;
     }
     #contact-form {
@@ -82,7 +82,7 @@
     hr {
         display: none;
     }
-    .contact {
+    .contact,.tracks {
         margin-top: 15%;
     }
 }
@@ -98,11 +98,10 @@
 /* Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-    .contact {
+    .contact, .tracks {
         margin-top: 10%;
     }
 }
-
 
 body {
     font-family: 'Lato', sans-serif;
@@ -202,7 +201,7 @@ body {
     background-color: #242424;
 }
 
-#main-carousel:hover {
+#main-carousel-item:hover {
     opacity: 0.5;
 }
 
@@ -345,6 +344,25 @@ footer i {
     display: block;
 }
 
+.leaderboard {
+    margin-top: 3%;
+}
+
+.leaderboard h4 {
+    color: #d6d429;
+}
+
+.leaderboard table {
+    background-color: #242424;
+    color: #d6d429;
+    font-size: large;
+}
+
+#current-driver {
+    background-color: #708f2b;
+    color: #242424;
+}
+
 #driver-gallery {
     display: none;
     margin-top: 5%;
@@ -432,6 +450,32 @@ footer i {
     .mx-30 {
         margin-bottom: 30px;
     }
+}
+
+/*--------------------------------------------------------------
+    Tracks
+-------------------------------------------------------------- */
+
+.tracks #first-track {
+    margin-top: 10%;
+}
+
+.tracks h3{
+    color: #242424;
+}
+
+.tracks #next-track{
+    margin-top: 5%;
+}
+
+.tracks img{
+    width: 100%;
+}
+
+.tracks-hr{
+    display: block;
+    border: 1px solid #242424;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
