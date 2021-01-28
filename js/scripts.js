@@ -159,9 +159,16 @@ $('.navbar-nav>li>a').on('click', function () {
 // Validation of the contact form
 function validateForm() {
     var fullName = document.forms["contact-form"]["full-name"].value;
+    var email = document.forms["contact-form"]["email"].value;
     var subject = document.forms["contact-form"]["subject"].value;
+    
     if (fullName == "") {
         alert("Name cannot be empty!");
+        return false;
+    }
+    if(email == "")
+    {
+        alert("Email cannot be empty!");
         return false;
     }
     if (subject == "") {
